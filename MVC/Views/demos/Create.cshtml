@@ -7,18 +7,18 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>demo</h4>
-        <hr/>
+        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.Birthdate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Birthdate, new { htmlAttributes = new { @class = "form-control abc" } })
+                @Html.EditorFor(model => model.Birthdate, "{0:d}", new { htmlAttributes = new { @class = "form-control " } })
                 @Html.ValidationMessageFor(model => model.Birthdate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -33,6 +33,11 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+<script>$(document).ready(function () {
+    $('#Birthdate').each(function () {
+            $(this).datepicker();
+        });
+    });</script>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
