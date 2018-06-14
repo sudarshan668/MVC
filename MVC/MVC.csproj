@@ -151,6 +151,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginsController.cs" />
     <Compile Include="Controllers\productsController.cs" />
+    <Compile Include="Controllers\sweetalertController.cs" />
+    <Compile Include="Controllers\SweetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -165,6 +167,7 @@
     <Compile Include="Models\MVCContex.cs" />
     <Compile Include="Models\product.cs" />
     <Compile Include="Models\purchased.cs" />
+    <Compile Include="Models\sweetalert.cs" />
     <Compile Include="OverEighteenYearsOld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -179,6 +182,10 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery.datetimepicker.css" />
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
+    <Content Include="Content\sweetalert\docs.css" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
@@ -291,6 +298,9 @@
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\_bootstrap-datetimepicker.less" />
     <Content Include="Content\bootstrap-datetimepicker-build.less" />
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -362,6 +372,8 @@
     <Content Include="Views\products\Details.cshtml" />
     <Content Include="Views\products\Edit.cshtml" />
     <Content Include="Views\products\Index.cshtml" />
+    <Content Include="Views\sweetalert\Create.cshtml" />
+    <Content Include="Views\Sweet\Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,31 +1,16 @@
 
 
-
-student-id,name,add,phone no,email,age,standard,FK_subject
-subject-id,math,hindi,english,history,FK_Grade
-Grade-id,a,b,c
-
-student-id,name,address,birthday,phone no,standard-FK_customer
-attendance-id,date,student-fk,time
-
-
-
-
-
 customer-id,name,address,phone no,email,login-id,password,confirm password -crude
 login-login-id,email-id,password,block
 product-id,name,details,price
 appoinment-id,customer-fk,FK_product,date,adv cash -crud
 
 
-sales-id,FK_customer,FK_product
+
 
 
 admin-id,login-id,password
 customer-crud-block-unblock
 product-id ,name,details,price -crud
 appoinment-daily appoinment-see
-
-
-
 
