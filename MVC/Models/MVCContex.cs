@@ -11,5 +11,8 @@ namespace MVC.Models
         public MVCContex() : base("conn") { }
         public DbSet<Login> Logins { get; set; }
         public DbSet<demo> demos { get; set; }
+
+        public System.Data.Entity.DbSet<MVC.Models.product> products { get; set; }
+        // public DbSet<demo2onbaseddemo> demo2onbaseddemo { get; set; }
     }
 }

@@ -16,6 +16,8 @@ namespace MVC.Models
         [OverEighteenYearsOld]
         public DateTime Birthdate { get; set; }
 
+       // public virtual ICollection<demo2onbaseddemo> demo2onbaseddemo { get; set; }
+
 
     }
 }
