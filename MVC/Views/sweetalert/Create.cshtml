@@ -17,9 +17,10 @@
             swal("Please enter name !");
             return false;
         } else if ($("#lastname").val() == "") {
-            swal("Please enter OrderPrice !");
+            swal("Please enter Lastname !");
             return false;
-        } else {
+        } else if ($("#name").val() != "" && $("#lastname").val() != "") {
+            swal("good to go");
             return true;
         }
     }</script>

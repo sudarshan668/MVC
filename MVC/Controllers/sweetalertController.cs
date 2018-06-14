@@ -47,7 +47,7 @@ namespace MVC.Controllers
         {
             return View();
         }
-
+ 
         // POST: sweetalert/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
